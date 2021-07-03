@@ -82,3 +82,16 @@ npm install --save-dev @vue/eslint-config-prettier
 npm install --save-dev eslint-plugin-prettier
 ```
 
+#### 使用方式
+
+由于`@vue/eslint-config-prettier`模块中已经导出了一些配置：
+
+```js
+// @vue/eslint-config-prettier/index.js
+module.exports = {
+  plugins: ['prettier'],  // => 这里已经写了
+  // ...
+}
+```
+
+所以安装之后无需做其他的配置。
