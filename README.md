@@ -68,8 +68,7 @@ npm install --save-dev @vue/eslint-config-prettier
  *    "prettier"
  *  ]
  * }
- * 
-/
+ */
 ```
 
 
