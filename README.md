@@ -1,10 +1,11 @@
-#
+# vue项目基础
 
+在使用了`vue-cli`脚手架生成vue的项目之后，我们需要对项目进行一些基础的配置，以确保在团队开发的过程中，使用  `prettier`配合`eslint`对代码进行格式化时，保持相同的代码风格。
 
-## prettier 配置
+## prettier配置
 
+`.prettiercc`文件
 
-.prettiercc
 ```json
 {
   "tabWidth": 2,
@@ -31,4 +32,54 @@
 * `vueIndentScriptAndStyle: false` 不要在 Vue 文件中缩进 script 和 style 标签。
 * `htmlWhitespaceSensitivity: "ignore"` 忽略空格敏感模式
 
+
+## eslint配置
+
+首先介绍一下需要安装的几个eslint配合prettier的插件
+
+### @vue/eslint-config-prettier 插件
+
+> 如果是在其他非vue项目中，可以用`eslint-config-prettier`代替。
+
+#### 安装
+
+```
+npm install --save-dev @vue/eslint-config-prettier
+```
+
+关闭所有不必要的或可能与 Prettier 冲突的规则。
+
+#### 使用方式
+
+将`"prettier"`添加到 `.eslintrc.*` 文件中的`"extends"`数组。确保把它放在最后，这样它就有机会覆盖其他配置。
+
+```js
+{
+  "extends": [
+    "some-other-config-you-use",
+    "@vue/prettier"
+  ]
+}
+/**
+ * 如果使用的是eslint-config-prettier，则引入的方式修改为
+ * {
+ *  "extends": [
+ *    "some-other-config-you-use",
+ *    "prettier"
+ *  ]
+ * }
+ * 
+/
+```
+
+
+### eslint-plugin-prettier 插件
+
+将 Prettier 作为 ESLint 规则运行，并将差异报告为单个 ESLint 问题。
+
+#### 安装
+
+```
+npm install --save-dev eslint-plugin-prettier
+```
 
