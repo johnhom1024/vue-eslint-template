@@ -183,7 +183,7 @@ module.exports = {
 npm install
 ```
 
-3. 使用 vscode 打开本项目，进入`src/main.js`文件，鼠标右键**格式化文档**。或者你可以使用快捷键，在 macOS 中请使用 `option` + `shift` + `f`。
+3. 使用 vscode 打开本项目，进入`src/main.js`文件，鼠标右键**格式化文档**。或者你可以使用快捷键，在**macOS**中使用 `Option` + `Shift` + `F`。在**Windows**中使用 `Shift` + `Alt` + `F`。
 
 4. 代码中的双引号自动改为单引号，eslint的错误提示消失。
 
