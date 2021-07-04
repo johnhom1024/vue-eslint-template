@@ -1,10 +1,18 @@
 # vue-cli 项目基础配置
 
-在使用了`vue-cli`脚手架生成 vue 的项目之后，我们需要对项目进行一些基础的配置，以确保在团队开发的过程中，使用 `prettier`配合`eslint`对代码进行格式化时，保持相同的代码风格。
+在使用了`vue-cli`脚手架生成 vue 的项目之后，我们需要对项目进行一些基础的配置，以确保在团队开发的过程中：
 
-目的是为了解决在开发过程中，使用vscode的`格式化文档`时，可以修复eslint的错误提示，例如下面：
+* 保持相同的代码风格。
+* 同时可以解决在开发过程中，使用`vscode`的**格式化文档**时，可以修复 eslint 的错误提示，例如下面：
 
 ![image](https://github.com/marihom/vue-eslint-template/raw/main/demo-01.png)
+
+格式化文件之后，双引号自动换成了单引号：
+
+![image](https://github.com/marihom/vue-eslint-template/raw/main/demo-02.png)
+
+为此我们需要用到`eslint` + `prettier`。
+
 ## prettier 配置
 
 `.prettiercc`文件
