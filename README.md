@@ -3,7 +3,7 @@
 在使用了`vue-cli`脚手架生成 vue 的项目之后，我们需要对项目进行一些基础的配置，以确保在团队开发的过程中：
 
 * 保持相同的代码风格。
-* 同时可以解决在开发过程中，使用`vscode`的**格式化文档**时，可以修复 eslint 的错误提示，例如下面：
+* 同时可以解决在开发过程中，使用`vscode`的**格式化文档**功能之后，可以修复 eslint 的所有错误提示，例如下面：
 
 ![image](https://github.com/marihom/vue-eslint-template/raw/main/demo-01.png)
 
