@@ -158,11 +158,9 @@ module.exports = {
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // 设置默认的 javascript 格式化工具为 vscode 中的 prettier
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // 设置默认的javascript格式化工具为vetur， vetur中已默认设置了.vue文件使用 prettier
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   }
