@@ -4,7 +4,7 @@
 
 目的是为了解决在开发过程中，使用vscode的`格式化文档`时，可以修复eslint的错误提示，例如下面：
 
-![image](https://github.com/marihom/vue-eslint-demo/raw/main/demo-01.jpg)
+![image](https://github.com/marihom/vue-eslint-template/raw/main/demo-01.png)
 ## prettier 配置
 
 `.prettiercc`文件
