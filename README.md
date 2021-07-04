@@ -45,7 +45,7 @@
 
 ## eslint 配置
 
-首先介绍一下eslint插件的一个导入方式，以及配合eslint的几个插件。
+首先介绍一下eslint插件的导入方式，以及配合eslint的几个插件。
 
 ### eslint 插件的导入方式
 
@@ -139,7 +139,54 @@ module.exports = {
 };
 ```
 
-所以安装之后我们无需再次引入`eslint-plugin-prettier`。
+所以安装该插件之后，我们已无需再次引入`eslint-plugin-prettier`。
 
+## vscode 配置
 
+为了配合 vscode 的格式化功能，我们需要在 vscode 中安装以下2个拓展插件：
 
+![image](https://github.com/marihom/vue-eslint-template/raw/main/eslint.png)
+
+![image](https://github.com/marihom/vue-eslint-template/raw/main/prettier.png)
+
+同时 vscode 需要设置`.js`和`.vue`文件的默认格式化工具使用`prettier`，我们可以在项目的根目录下新建`.vscode`文件夹，然后新建一个`setting.json`文件来覆盖我们自己电脑中默认的 vscode 设置：
+
+```json
+// .vscode/setting.json
+
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 设置默认的 javascript 格式化工具为 vscode 中的 prettier
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 设置默认的javascript格式化工具为vetur， vetur中已默认设置了.vue文件使用 prettier
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  }
+}
+```
+
+## 测试格式化功能
+
+在项目中使用了以上的配置之后，我们就可以在项目中直接使用 vscode 的**格式化文档**功能，对代码的风格进行统一，同时也避免了需要自己手动更改代码的问题。
+
+如果你想要使用本仓库进行测试，也可以通过 clone 本项目到自己的电脑中。
+
+### 使用步骤
+
+1. vscode 打开拓展，安装以上提到的2个拓展插件。
+
+2. 使用 vscode 打开本项目，安装依赖。
+
+```
+npm install
+```
+
+3. 进入`src/main.js`文件，鼠标右键**格式化文档功能**，或者你可以使用快捷键，在 macOS 中请使用 `option` + `shift` + `f`。
+
+4. 代码中的双引号自动改为单引号，eslint的错误提示消失。
+
+Enjoy Yourself
