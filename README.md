@@ -185,7 +185,7 @@ module.exports = {
 npm install
 ```
 
-3. 进入`src/main.js`文件，鼠标右键**格式化文档功能**，或者你可以使用快捷键，在 macOS 中请使用 `option` + `shift` + `f`。
+3. 进入`src/main.js`文件，鼠标右键**格式化文档功能**。或者你可以使用快捷键，在 macOS 中请使用 `option` + `shift` + `f`。
 
 4. 代码中的双引号自动改为单引号，eslint的错误提示消失。
 
