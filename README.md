@@ -87,13 +87,14 @@ ESLint 支持使用第三方插件。在使用插件之前，你必须使用 npm
 
 > 如果是在其他非 vue 项目中，可以用`eslint-config-prettier`代替。
 
+关闭所有不必要的或可能与 Prettier 冲突的规则。
+
 #### 安装
 
 ```
 npm install --save-dev @vue/eslint-config-prettier
 ```
 
-关闭所有不必要的或可能与 Prettier 冲突的规则。
 
 #### 使用方式
 
