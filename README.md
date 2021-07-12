@@ -7,7 +7,7 @@
 
 ![image](https://github.com/marihom/vue-eslint-template/raw/main/demo-01.png)
 
-格式化文件之后，双引号自动换成了单引号：
+当我们点击**格式化文件**之后，双引号自动换成了单引号：
 
 ![image](https://github.com/marihom/vue-eslint-template/raw/main/demo-02.png)
 
